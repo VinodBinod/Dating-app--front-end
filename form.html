@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elongated Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- Form Screen -->
+  <div id="form-screen" class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4" id="back-button" disabled>
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <span id="form-title">Form Title</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto px-6 pt-6 pb-[90px]">
+      <div id="form-container" class="bg-white p-6 rounded-[20px] shadow-sm space-y-6">
+        <!-- Dynamic form content will be injected here -->
+
+        <!-- Buttons -->
+        <div class="flex justify-between pt-6">
+          <button id="prev-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-[50px]" disabled>
+            Back
+          </button>
+          <button id="next-btn" class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">
+            Next
+          </button>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script>
+    const screens = [
+      {
+        title: "What are your interests?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Interests</label>
+          <div class="flex flex-wrap gap-3">
+            <button class="interest-btn bg-[#FE506B] text-white px-4 py-2 rounded-[50px]">Football</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cricket</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Badminton</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Gaming</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cooking</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Traveling</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Dancing</button>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">Click on any button to select your interests.</p>
+        `,
+      },
+      {
+        title: "Why are you here?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Tell Us Why You're Here</label>
+          <textarea class="w-full border rounded-lg p-4" placeholder="Enter your purpose or goals here"></textarea>
+        `,
+      },
+      {
+        title: "What is your gender?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Gender</label>
+          <select class="w-full border rounded-lg p-4">
+            <option value="">Select an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        `,
+      },
+      {
+        title: "Upload your photos",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Upload Your Best Photos</label>
+          <input type="file" class="w-full border rounded-lg p-4">
+          <p class="mt-4 text-sm text-gray-500">Upload high-quality images (max size: 5MB).</p>
+        `,
+      },
+      {
+        title: "What is your birthdate?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Enter Your Birthdate</label>
+          <input type="date" class="w-full border rounded-lg p-4">
+        `,
+      },
+      {
+        title: "What is your name?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Name</label>
+          <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter your full name">
+        `,
+      },
+      {
+        title: "What is your phone number?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Phone Number</label>
+          <input type="tel" class="w-full border rounded-lg p-4" placeholder="Enter your contact number">
+        `,
+      },
+      {
+        title: "Enter the OTP",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Verify with OTP</label>
+          <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter the OTP sent to your phone">
+        `,
+      },
+    ];
+
+    let currentScreen = 0;
+
+    function renderScreen(index) {
+      const screen = screens[index];
+      document.getElementById("form-title").innerText = screen.title;
+      document.getElementById("form-container").innerHTML = `
+        ${screen.content}
+        <div class="flex justify-between pt-6">
+          <button id="prev-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-[50px]" ${index === 0 ? 'disabled' : ''}>
+            Back
+          </button>
+          <button id="next-btn" class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">
+            ${index === screens.length - 1 ? 'Submit' : 'Next'}
+          </button>
+        </div>
+      `;
+
+      // Handle interest button click styling
+      document.querySelectorAll(".interest-btn").forEach(button => {
+        button.addEventListener("click", () => {
+          button.classList.toggle("bg-[#FE506B]");
+          button.classList.toggle("bg-gray-300");
+          button.classList.toggle("text-white");
+          button.classList.toggle("text-gray-700");
+        });
+      });
+
+      // Navigation button events
+      document.getElementById("prev-btn").addEventListener("click", () => {
+        if (currentScreen > 0) {
+          currentScreen--;
+          renderScreen(currentScreen);
+        }
+      });
+
+      document.getElementById("next-btn").addEventListener("click", () => {
+        if (currentScreen < screens.length - 1) {
+          currentScreen++;
+          renderScreen(currentScreen);
+        } else {
+          alert("Form submitted!");
+        }
+      });
+    }
+
+    // Initialize the first screen
+    renderScreen(currentScreen);
+  </script>
+</body>
+</html>

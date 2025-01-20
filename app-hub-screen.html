@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>App Hub Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- App Hub Screen -->
+  <div id="app-hub-screen" class="min-h-screen flex flex-col">
+    <header class="bg-[#ffebee] text-white p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span class="text-black">App Hub</span>
+    </header>
+    <main class="flex-1 overflow-y-auto p-4 pb-16"> <!-- Added pb-16 for footer spacing -->
+      <div class="tabs flex space-x-4 mb-4">
+        <button class="text-[#FE506B] font-bold rounded-[50px] px-6 py-2">For You</button>
+        <button class="text-gray-600 rounded-[50px] px-6 py-2">Recommended</button>
+      </div>
+      <div class="grid grid-cols-1 gap-4">
+        <!-- Example Streamer Profile Cards -->
+        <div class="bg-white p-4 rounded-[50px] shadow-md flex items-center space-x-4">
+          <img src="images/Pofile Images/profile1.jpg" alt="Streamer" class="w-12 h-12 rounded-full">
+          <div class="flex-1">
+            <h3 class="font-bold">Suman Poojari</h3>
+            <p class="text-sm text-gray-600">Available | English</p>
+          </div>
+          <button class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">Call</button>
+        </div>
+        <div class="bg-white p-4 rounded-[50px] shadow-md flex items-center space-x-4">
+        <img src="images/Pofile Images/profile2.jpg" alt="Streamer" class="w-12 h-12 rounded-full">
+        <div class="flex-1">
+            <h3 class="font-bold">Rahul Subramaniam</h3>
+            <p class="text-sm text-gray-600">Available | English</p>
+        </div>
+        <button class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">Call</button>
+        </div>
+        <div class="bg-white p-4 rounded-[50px] shadow-md flex items-center space-x-4">
+        <img src="images/Pofile Images/profile3.jpg" alt="Streamer" class="w-12 h-12 rounded-full">
+        <div class="flex-1">
+            <h3 class="font-bold">Ganesh Shinde</h3>
+            <p class="text-sm text-gray-600">Available | English</p>
+        </div>
+        <button class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">Call</button>
+        </div>
+        <div class="bg-white p-4 rounded-[50px] shadow-md flex items-center space-x-4">
+        <img src="images/Pofile Images/profile4.jpg" alt="Streamer" class="w-12 h-12 rounded-full">
+        <div class="flex-1">
+            <h3 class="font-bold">Akhil Raj</h3>
+            <p class="text-sm text-gray-600">Available | English</p>
+        </div>
+        <button class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">Call</button>
+        </div>
+        <div class="bg-white p-4 rounded-[50px] shadow-md flex items-center space-x-4">
+        <img src="images/Pofile Images/profile5.jpg" alt="Streamer" class="w-12 h-12 rounded-full">
+        <div class="flex-1">
+            <h3 class="font-bold">Kartik Kumar</h3>
+            <p class="text-sm text-gray-600">Available | English</p>
+        </div>
+        <button class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">Call</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full rounded-t-[50px] rounded-b-[50px]">
+    <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-video"></i> <!-- Live icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-home"></i> <!-- App Hub icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-comments"></i> <!-- Messages icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-user"></i> <!-- Profile icon -->
+    </button>
+  </footer>
+  
+</body>
+</html>

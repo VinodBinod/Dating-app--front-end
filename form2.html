@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Form Card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-cover bg-center min-h-screen" style="background-image: url('your-background-image.jpg');">
+  <header class="bg-white text-black p-4 text-center font-bold rounded-t-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span>Personal Details</span>
+  </header>
+
+    <!-- Progress Bar -->
+     <div class="px-5">
+        <div class="bg-gray-200 h-2 rounded-t-[50px]">
+            <div id="progress-bar" class="h-2 bg-[#FE506B] rounded-full w-0"></div>
+          </div>
+          <div class="text-center text-black mt-2">
+            <span id="progress-text">1/{{screens.length}}</span>
+          </div>
+     </div>
+
+
+  <!-- Form Screen -->
+  <div id="form-screen" class="min-h-screen flex flex-col justify-between">
+    <div class="flex-1 flex items-center justify-center px-4">
+      <div class="bg-white p-6 rounded-[20px] shadow-lg w-full max-w-md space-y-6 overflow-hidden">
+        <!-- Header -->
+        <header class="text-black text-center font-bold">
+          <span id="form-title" class="text-xl">Form Title</span>
+        </header>
+
+        <!-- Form Content -->
+        <main id="form-container" class="space-y-6">
+          <!-- Dynamic form content will be injected here -->
+        </main>
+
+        <!-- Buttons -->
+        <div class="flex justify-between pt-6">
+          <button id="prev-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-[50px]" disabled>
+            Back
+          </button>
+          <button id="next-btn" class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+
+  <script>
+    const screens = [
+      {
+        title: "What are your interests?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Interests</label>
+          <div class="flex flex-wrap gap-3">
+            <button class="interest-btn bg-[#FE506B] text-white px-4 py-2 rounded-[50px]">Football</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cricket</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Badminton</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Gaming</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cooking</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Traveling</button>
+            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Dancing</button>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">Click on any button to select your interests.</p>
+        `,
+      },
+      {
+        title: "Why are you here?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Tell Us Why You're Here</label>
+          <textarea class="w-full border rounded-lg p-4" placeholder="Enter your purpose or goals here"></textarea>
+        `,
+      },
+      {
+        title: "What is your gender?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Gender</label>
+          <select class="w-full border rounded-lg p-4">
+            <option value="">Select an option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        `,
+      },
+      {
+        title: "Upload your photos",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Upload Your Best Photos</label>
+          <input type="file" class="w-full border rounded-lg p-4">
+          <p class="mt-4 text-sm text-gray-500">Upload high-quality images (max size: 5MB).</p>
+        `,
+      },
+      {
+        title: "What is your birthdate?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Enter Your Birthdate</label>
+          <input type="date" class="w-full border rounded-lg p-4">
+        `,
+      },
+      {
+        title: "What is your name?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Name</label>
+          <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter your full name">
+        `,
+      },
+      {
+        title: "What is your phone number?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Phone Number</label>
+          <input type="tel" class="w-full border rounded-lg p-4" placeholder="Enter your contact number">
+        `,
+      },
+      {
+        title: "Enter the OTP",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg">Verify with OTP</label>
+          <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter the OTP sent to your phone">
+        `,
+      },
+    ];
+    let currentScreen = 0;
+
+    function renderScreen(index) {
+      const screen = screens[index];
+      document.getElementById("form-title").innerText = screen.title;
+      document.getElementById("form-container").innerHTML = screen.content;
+
+      // Handle interest button click styling
+      document.querySelectorAll(".interest-btn").forEach(button => {
+        button.addEventListener("click", () => {
+          button.classList.toggle("bg-[#FE506B]");
+          button.classList.toggle("bg-gray-300");
+          button.classList.toggle("text-white");
+          button.classList.toggle("text-gray-700");
+        });
+      });
+
+      // Navigation button events
+      document.getElementById("prev-btn").disabled = index === 0;
+      document.getElementById("prev-btn").onclick = () => {
+        if (currentScreen > 0) {
+          currentScreen--;
+          renderScreen(currentScreen);
+        }
+      };
+
+      document.getElementById("next-btn").innerText = index === screens.length - 1 ? 'Submit' : 'Next';
+      document.getElementById("next-btn").onclick = () => {
+        if (currentScreen < screens.length - 1) {
+          currentScreen++;
+          renderScreen(currentScreen);
+        } else {
+          alert("Form submitted!");
+        }
+      };
+
+      // Update progress bar
+      const progress = ((currentScreen + 1) / screens.length) * 100;
+      document.getElementById("progress-bar").style.width = `${progress}%`;
+      document.getElementById("progress-text").innerText = `${currentScreen + 1}/${screens.length}`;
+    }
+
+    // Initialize the first screen
+    renderScreen(currentScreen);
+  </script>
+</body>
+</html>

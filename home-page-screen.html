@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Homepage</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- Homepage Screen -->
+  <div id="homepage-screen" class="min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] shadow-md flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i>
+      </button>
+      <span class="text-lg">Homepage</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto p-4 pb-20">
+      <div class="grid grid-cols-1 gap-4">
+      <!-- Card 1 -->
+      <div class="bg-white p-3 rounded-[15px] shadow-md flex flex-col space-y-3">
+        <!-- Top Row -->
+        <div class="flex items-center space-x-3">
+          <img src="images/Profile Images/profile1.jpg" alt="User" class="w-16 h-16 rounded-[15px]">
+          <div class="flex-1">
+            <h3 class="font-bold text-sm">Suman Poojari</h3>
+            <div class="flex items-center text-yellow-500 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="ml-1 text-gray-600">(4.5)</span>
+            </div>
+            <p class="text-xs text-gray-600 mt-1">Available | English</p>
+          </div>
+          <div class="flex space-x-1">
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-microphone"></i>
+            </button>
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-video"></i>
+            </button>
+          </div>
+        </div>
+        <!-- Bottom Row -->
+        <div>
+          <p class="text-xs text-gray-700"><span class="font-bold">Hobbies:</span> Singing, Traveling, Reading</p>
+          <p class="text-xs text-gray-700 mt-1"><span class="font-bold">Languages:</span> English, Hindi</p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white p-3 rounded-[15px] shadow-md flex flex-col space-y-3">
+        <div class="flex items-center space-x-3">
+          <img src="images/Profile Images/profile2.jpg" alt="User" class="w-16 h-16 rounded-[15px]">
+          <div class="flex-1">
+            <h3 class="font-bold text-sm">Rahul Subramaniam</h3>
+            <div class="flex items-center text-yellow-500 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="ml-1 text-gray-600">(5.0)</span>
+            </div>
+            <p class="text-xs text-gray-600 mt-1">Available | English</p>
+          </div>
+          <div class="flex space-x-1">
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-microphone"></i>
+            </button>
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-video"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs text-gray-700"><span class="font-bold">Hobbies:</span> Coding, Cycling, Blogging</p>
+          <p class="text-xs text-gray-700 mt-1"><span class="font-bold">Languages:</span> English, Tamil</p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white p-3 rounded-[15px] shadow-md flex flex-col space-y-3">
+        <div class="flex items-center space-x-3">
+          <img src="images/Profile Images/profile3.jpg" alt="User" class="w-16 h-16 rounded-[15px]">
+          <div class="flex-1">
+            <h3 class="font-bold text-sm">Ananya Sharma</h3>
+            <div class="flex items-center text-yellow-500 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+              <span class="ml-1 text-gray-600">(4.8)</span>
+            </div>
+            <p class="text-xs text-gray-600 mt-1">Available | English, Hindi</p>
+          </div>
+          <div class="flex space-x-1">
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-microphone"></i>
+            </button>
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-video"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs text-gray-700"><span class="font-bold">Hobbies:</span> Painting, Yoga, Gardening</p>
+          <p class="text-xs text-gray-700 mt-1"><span class="font-bold">Languages:</span> English, Hindi</p>
+        </div>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white p-3 rounded-[15px] shadow-md flex flex-col space-y-3">
+        <div class="flex items-center space-x-3">
+          <img src="images/Profile Images/profile4.jpg" alt="User" class="w-16 h-16 rounded-[15px]">
+          <div class="flex-1">
+            <h3 class="font-bold text-sm">Meera Patel</h3>
+            <div class="flex items-center text-yellow-500 text-xs">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span class="ml-1 text-gray-600">(4.0)</span>
+            </div>
+            <p class="text-xs text-gray-600 mt-1">Available | Gujarati</p>
+          </div>
+          <div class="flex space-x-1">
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-microphone"></i>
+            </button>
+            <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+              <i class="fas fa-video"></i>
+            </button>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs text-gray-700"><span class="font-bold">Hobbies:</span> Cooking, Traveling, Dancing</p>
+          <p class="text-xs text-gray-700 mt-1"><span class="font-bold">Languages:</span> Gujarati, English</p>
+        </div>
+      </div>
+
+<!-- Card 5 -->
+<div class="bg-white p-3 rounded-[15px] shadow-md flex flex-col space-y-3">
+  <div class="flex items-center space-x-3">
+    <img src="images/Profile Images/profile5.jpg" alt="User" class="w-16 h-16 rounded-[15px]">
+    <div class="flex-1">
+      <h3 class="font-bold text-sm">Rohan Kumar</h3>
+      <div class="flex items-center text-yellow-500 text-xs">
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <i class="fas fa-star"></i>
+        <span class="ml-1 text-gray-600">(5.0)</span>
+      </div>
+      <p class="text-xs text-gray-600 mt-1">Available | English, Bengali</p>
+    </div>
+    <div class="flex space-x-1">
+      <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+        <i class="fas fa-microphone"></i>
+      </button>
+      <button class="bg-[#FE506B] text-white px-2 py-1 text-l rounded-[20px]">
+        <i class="fas fa-video"></i>
+      </button>
+    </div>
+  </div>
+  <div>
+    <p class="text-xs text-gray-700"><span class="font-bold">Hobbies:</span> Photography, Trekking, Reading</p>
+    <p class="text-xs text-gray-700 mt-1"><span class="font-bold">Languages:</span> Bengali, English</p>
+  </div>
+</div>
+
+        
+        <!-- Add 3 more cards similarly -->
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full rounded-t-[50px]">
+    <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-video"></i>
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-home"></i>
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-comments"></i>
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-user"></i>
+    </button>
+  </footer>
+
+</body>
+</html>

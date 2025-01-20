@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Streamers Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- Live Streamers Screen -->
+  <div id="live-streamers-screen" class="min-h-screen flex flex-col">
+    <!-- Header with back button and title -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span>Live Streamers</span>
+    </header>
+
+    <main class="flex-1 overflow-y-auto p-4 pb-16"> <!-- Added pb-16 for footer spacing -->
+        <div class="grid grid-cols-2 gap-4">
+          <!-- Existing Streamer Cards -->
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile1.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Ankita</h3>
+              <p class="text-sm text-gray-600">India</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile2.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Shalani</h3>
+              <p class="text-sm text-gray-600">USA</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile3.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Kanika</h3>
+              <p class="text-sm text-gray-600">Canada</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile4.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Aarti</h3>
+              <p class="text-sm text-gray-600">UK</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <!-- New Streamer Cards -->
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile5.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Rajesh</h3>
+              <p class="text-sm text-gray-600">India</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile6.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Nikita</h3>
+              <p class="text-sm text-gray-600">Australia</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile7.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Siddharth</h3>
+              <p class="text-sm text-gray-600">Germany</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+      
+          <div class="bg-white pb-4 rounded-[20px] shadow-md flex flex-col items-center">
+            <img src="images/Profile Images/profile8.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <div class="mt-2 text-center">
+              <h3 class="font-bold text-lg">Maya</h3>
+              <p class="text-sm text-gray-600">Japan</p>
+            </div>
+            <button class="mt-4 bg-[#FE506B] text-white px-4 py-2 rounded-full flex items-center space-x-2 focus:outline-none">
+              <span class="w-2 h-2 bg-white rounded-full"></span> <!-- Circular dot -->
+              <span>Live</span>
+            </button>
+          </div>
+        </div>
+      </main>
+      
+      
+
+  </div>
+
+  <!-- Footer with icons -->
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full rounded-t-[50px] rounded-b-[50px]">
+    <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-video"></i> <!-- Live icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-home"></i> <!-- App Hub icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-comments"></i> <!-- Messages icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-user"></i> <!-- Profile icon -->
+    </button>
+  </footer>
+
+</body>
+</html>

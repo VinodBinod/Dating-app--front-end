@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User's Profile</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- User's Profile Screen -->
+  <div id="user-profile-screen" class="min-h-screen flex flex-col">
+    <!-- Header with back button and title -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span>User's Profile</span>
+    </header>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto p-4 pb-16">
+      <div class="bg-white p-6 rounded-[50px] shadow-md text-center">
+        <!-- Profile Image and Name -->
+        <img src="images/Profile Images/profile3.jpg" alt="Streamer" class="w-full h-full rounded-t-[30px] rounded-b-[30px] mx-auto mb-4">
+        <h3 class="text-xl font-bold">User Name</h3>
+        <p class="text-sm text-gray-600">Followers: 1200 | Following: 50</p>
+        
+        <!-- Message and Location Buttons -->
+        <div class="mt-4 flex justify-center space-x-4">
+          <!-- Message Button -->
+          <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
+            <i class="fas fa-comment"></i> <!-- Message Icon -->
+          </button>
+          <!-- Location Button -->
+          <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
+            <i class="fas fa-map-marker-alt"></i> <!-- Location Icon -->
+          </button>
+        </div>
+      </div>
+
+      <!-- About Section -->
+      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+        <h4 class="text-lg font-semibold text-[#FE506B]">About Me</h4>
+        <p class="text-sm text-gray-700 mt-2">
+          Hi, I'm User Name. I love hiking, traveling, and exploring new cuisines. Always up for a good conversation and making meaningful connections.
+        </p>
+      </div>
+
+      <!-- Languages Section -->
+      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+        <h4 class="text-lg font-semibold text-[#FE506B]">Languages I Speak</h4>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">English</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Spanish</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">French</span>
+        </div>
+      </div>
+
+      <!-- Interests Section -->
+      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+        <h4 class="text-lg font-semibold text-[#FE506B]">Interests</h4>
+        <div class="flex flex-wrap gap-2 mt-2">
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Hiking</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Cooking</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Movies</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Photography</span>
+          <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Gaming</span>
+        </div>
+      </div>
+
+      <!-- Recent Photos Section -->
+      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+        <h4 class="text-lg font-semibold text-[#FE506B]">Recent Photos</h4>
+        <div class="grid grid-cols-3 gap-2 mt-2">
+          <img src="images/Profile Images/profile1.jpg" alt="Photo 1" class="w-full h-20 object-cover rounded-lg">
+          <img src="images/Profile Images/profile2.jpg" alt="Photo 2" class="w-full h-20 object-cover rounded-lg">
+          <img src="images/Profile Images/profile3.jpg" alt="Photo 3" class="w-full h-20 object-cover rounded-lg">
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <!-- Footer with icons -->
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full rounded-t-[50px] rounded-b-[50px]">
+    <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-video"></i> <!-- Live icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-home"></i> <!-- App Hub icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-comments"></i> <!-- Messages icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-user"></i> <!-- Profile icon -->
+    </button>
+  </footer>
+
+</body>
+</html>
