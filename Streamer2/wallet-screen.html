@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Streamer Wallet Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#f3f4f6]">
+
+  <!-- Streamer Wallet Screen -->
+  <div id="streamer-wallet-screen" class="min-h-screen flex flex-col">
+    <!-- Header with back button and title -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span>Wallet</span>
+    </header>
+
+    <!-- Streamer Profile Section -->
+    <section>
+      <div class="relative w-full h-60 overflow-hidden shadow-lg">
+        <img src="images/Profile Images/profile2.jpg" alt="Streamer Profile" class="w-full h-full object-cover">
+        <div class="absolute inset-0 bg-[#FE506B] opacity-75"></div>
+        <div class="absolute inset-0 flex items-center justify-start p-4">
+          <h2 class="text-white text-2xl font-bold">Alex Streamington</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="flex-1 overflow-y-auto pb-4" style="margin-top: -35px; z-index: 1000;">
+      <div class="bg-white p-[25px] rounded-[30px] shadow-md">
+        <h3 class="text-xl text-black font-bold my-4">Your Earnings: $2,350.75</h3>
+
+        <!-- Wallet Actions -->
+        <div class="grid grid-cols-2 gap-4 mt-6">
+          <!-- Add Funds -->
+          <div class="bg-[#ffebee] text-center rounded-[20px] shadow-md">
+            <div class="bg-white p-4 rounded-t-[20px]">
+              <h4 class="text-lg font-semibold text-black">Add Funds</h4>
+            </div>
+            <div class="bg-[#ffebee] p-4 rounded-b-[20px]">
+              <p class="text-sm text-black">Top up your wallet</p>
+            </div>
+          </div>
+
+          <!-- Payout -->
+          <div class="bg-[#ffebee] text-center rounded-[20px] shadow-md">
+            <div class="bg-white p-4 rounded-t-[20px]">
+              <h4 class="text-lg font-semibold text-black">Request Payout</h4>
+            </div>
+            <div class="bg-[#ffebee] p-4 rounded-b-[20px]">
+              <p class="text-sm text-black">Withdraw earnings</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Recent Activity Section -->
+    <section class="mt-6 px-4">
+      <h3 class="text-lg font-bold text-black mb-4">Recent Transactions</h3>
+      <div class="space-y-4">
+        <!-- Transaction 1 -->
+        <div class="bg-white p-4 rounded-[20px] shadow-md flex justify-between items-center">
+          <div>
+            <h4 class="font-bold">Tip Received</h4>
+            <p class="text-sm text-gray-600">From: @user123</p>
+          </div>
+          <p class="text-green-500 font-bold">+ $50</p>
+        </div>
+        <!-- Transaction 2 -->
+        <div class="bg-white p-4 rounded-[20px] shadow-md flex justify-between items-center">
+          <div>
+            <h4 class="font-bold">Payout</h4>
+            <p class="text-sm text-gray-600">To: Bank Account</p>
+          </div>
+          <p class="text-red-500 font-bold">- $200</p>
+        </div>
+        <!-- Transaction 3 -->
+        <div class="bg-white p-4 rounded-[20px] shadow-md flex justify-between items-center">
+          <div>
+            <h4 class="font-bold">Tip Received</h4>
+            <p class="text-sm text-gray-600">From: @gamerfan</p>
+          </div>
+          <p class="text-green-500 font-bold">+ $75</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer with Navigation -->
+    <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full" style="z-index: 10000;">
+      <button class="text-black focus:outline-none rounded-[50px] px-6 py-2">
+        <i class="fas fa-video"></i> <!-- Live icon -->
+      </button>
+      <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+        <i class="fas fa-wallet"></i> <!-- Wallet icon -->
+      </button>
+      <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+        <i class="fas fa-user-friends"></i> <!-- Followers icon -->
+      </button>
+      <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+        <i class="fas fa-cog"></i> <!-- Settings icon -->
+      </button>
+    </footer>
+  </div>
+
+</body>
+</html>
