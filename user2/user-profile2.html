@@ -18,17 +18,28 @@
       </button>
       <span>User's Profile</span>
     </header>
+    <div class="relative w-full h-[300px] bg-[#FE506B] shadow-lg rounded-b-[20px] flex items-center justify-center mt-6">
+      <!-- Circular Image -->
+      <div class="relative w-32 h-32 rounded-full border-[5px] border-white overflow-hidden">
+        <img src="images/Profile Images/profile3.jpg" alt="Sample Image" class="w-full h-full object-cover">
+      </div>
+      <!-- Overlay Text -->
+      <div class="absolute bottom-4 text-center border-2 border-white p-2 rounded-full">
+        <h2 class="text-white font-bold">Edit Profile +</h2>
+      </div>
+    </div>
+    
 
     <!-- Main Content -->
-    <main class="flex-1 overflow-y-auto p-4 pb-16">
-      <div class="bg-white p-6 rounded-[50px] shadow-md text-center">
+    <main class="flex-1 overflow-y-auto p-4 pb-16 mt-4">
+      <div class="bg-white p-6 rounded-[20px] shadow-md text-center">
         <!-- Profile Image and Name -->
-        <img src="images/Profile Images/profile3.jpg" alt="Streamer" class="w-full h-full rounded-t-[30px] rounded-b-[30px] mx-auto mb-4">
-        <h3 class="text-xl font-bold">User Name</h3>
+        <!-- <img src="images/Profile Images/profile3.jpg" alt="Streamer" class="w-full h-full rounded-t-[30px] rounded-b-[30px] mx-auto mb-4"> -->
+        <h3 class="text-xl font-bold">Anuj Kamkar</h3>
         <p class="text-sm text-gray-600">Followers: 1200 | Following: 50</p>
         
         <!-- Message and Location Buttons -->
-        <div class="mt-4 flex justify-center space-x-4">
+        <div class="mt-4 flex justify-center space-x-4" style="display: none;">
           <!-- Message Button -->
           <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
             <i class="fas fa-comment"></i> <!-- Message Icon -->

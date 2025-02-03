@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Live Streamers Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-[#ffebee]">
+
+  <!-- Live Streamers Screen -->
+  <div id="live-streamers-screen" class="min-h-screen flex flex-col">
+    <!-- Header with back button and title -->
+    <header class="bg-[#ffebee] text-black p-4 text-center font-bold rounded-t-[50px] rounded-b-[50px] flex items-center">
+      <button class="text-black focus:outline-none p-2 mr-4">
+        <i class="fas fa-arrow-left"></i> <!-- Back arrow icon -->
+      </button>
+      <span>Home Page</span>
+    </header>
+
+    <main class="flex-1 overflow-y-auto  pb-16"> <!-- Added pb-16 for footer spacing -->
+      <div class="bg-white rounded-lg shadow-md overflow-hidden flex flex-row mb-3 relative" style="border-radius: 20px; margin-bottom: 20px;">
+        <!-- "User's Top Choice" Button -->
+
+      
+        <!-- User Image -->
+        <div class="w-1/3 flex items-center justify-center p-2" style="margin-top: 50px;margin-bottom: 10px;margin-left: 5px;">
+          <img
+            src="images/Profile Images/profile7.jpg"
+            alt="User 2"
+            class="w-full h-40 object-cover"
+            style="border-radius: 20px;"
+          />
+        </div>
+      
+        <!-- User Content -->
+        <div class="w-2/3 flex flex-col justify-between p-4" style="margin-top: 50px;margin-bottom: 10px;">
+          <div>
+            <button
+            type="button"
+            class="absolute top-3 right-2 text-gray-900 bg-[#5a6264] hover:bg-[#5a6264] focus:ring-4 focus:outline-none focus:ring-gray-100 font-medium rounded-lg text-sm px-5 py-2.5 inline-flex items-center dark:focus:ring-gray-500 me-2 mb-2 text-white"
+            style="z-index: 10;"
+            >
+            User's Top Choice
+            </button>
+          </div>
+          <!-- Name and Bio -->
+          <div>
+            <h2 class="text-lg font-bold" style="font-size: 20px;">Kiram Ahuja</h2>
+            <p class="text-sm text-gray-600 mt-1">Fitness Enthusiast | Yoga Trainer | Life Coach</p>
+          </div>
+          <!-- Talk Now Button -->
+          <div class="flex justify-start mt-2">
+            <button class="bg-[#337ab1] text-white px-4 py-2 flex items-center rounded-[10px]">
+              Talk Now
+            </button>
+          </div>
+        </div>
+      </div>
+      
+        
+      <div class="grid grid-cols-2 gap-4">
+        <!-- Card 1 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile1.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile1.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Ankita</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">English, Hindi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile2.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile2.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Rahul</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Marathi, English</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile3.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile3.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Sneha</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Malayalam, English</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile4.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile4.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Karan</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Gujarati, Hindi</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile5.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile5.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Priya</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Telugu, Tamil</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile6.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile6.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Ravi</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Punjabi, Hindi</p>
+              </div>
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 7 -->
+        <div class="bg-black rounded-[20px] shadow-md flex flex-col items-center relative">
+          <div class="relative w-full">
+            <img src="images/Profile Images/profile7.jpg" alt="Streamer" class="w-full h-[200px] rounded-[20px]">
+            <!-- <button class="absolute top-2 right-2 bg-[#FE506B] text-white text-xs py-0.5 px-2 rounded-full flex items-center space-x-1 focus:outline-none"> -->
+              <!-- <span class="w-1 h-1 bg-white rounded-full"></span> -->
+              <!-- <span style="font-size: 10px;">Live</span> -->
+            <!-- </button> -->
+          </div>
+          <div class="flex w-full mt-4 items-center p-2">
+            <div class="w-1/4 flex justify-center items-center">
+              <img src="images/Profile Images/profile7.jpg" alt="Streamer Thumbnail" class="w-10 h-10 rounded-full object-cover border border-gray-300">
+            </div>
+            <div class="w-3/4 flex flex-col justify-between text-center pl-1 pb-1">
+              <div class="flex justify-start items-center">
+                <h3 class="font-semibold text-sm mr-1 text-white">Aisha</h3>
+              </div>
+              <div class="mt-1">
+                <p class="text-sm text-white text-left">Urdu, Arabic</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        </div>
+      </main>
+  </div>
+
+  <!-- Footer with icons -->
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full">
+    <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-video"></i> <!-- Live icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-home"></i> <!-- App Hub icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-comments"></i> <!-- Messages icon -->
+    </button>
+    <button class="text-gray-600 focus:outline-none rounded-[50px] px-6 py-2">
+      <i class="fas fa-user"></i> <!-- Profile icon -->
+    </button>
+  </footer>
+
+</body>
+</html>

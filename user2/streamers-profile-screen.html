@@ -20,29 +20,31 @@
     </header>
 
     <!-- Main Content -->
-    <main class="flex-1 overflow-y-auto p-4 pb-[100px]">
+    <main class="flex-1 overflow-y-auto p-1 pb-[100px]">
       <!-- Profile Card -->
-      <div class="bg-white p-6 rounded-[20px] shadow-md text-center">
-        <img src="images/Profile Images/profile4.jpg" alt="Streamer" class="w-full h-full rounded-t-[30px] rounded-b-[30px] mx-auto mb-4">
-        <h3 class="text-xl font-bold">Streamer Name</h3>
-        <p class="text-sm text-gray-600">Followers: 1200 | Following: 50</p>
-        <p class="text-sm text-gray-700 mt-2">
-          A passionate streamer who loves gaming, interacting with fans, and sharing fun moments online. Always up for trying something new!
-        </p>
-        <div class="mt-4 flex justify-center space-x-4">
-          <!-- Video Call Button -->
-          <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
-            <i class="fas fa-video"></i>
-          </button>
-          <!-- Audio Call Button -->
-          <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
-            <i class="fas fa-headphones"></i>
-          </button>
+      <div class="mx-4 bg-white p-3 rounded-[20px] shadow-md text-center">
+        <img src="images/Profile Images/profile4.jpg" alt="Streamer" class="w-full h-full rounded-[15px] rounded-[15px] mx-auto mb-4">
+        <div class="p-6">
+          <h3 class="text-xl font-bold">Streamer Name</h3>
+          <p class="text-base text-gray-600">Followers: 1200 | Following: 50</p>
+          <p class="text-base text-gray-700 mt-2">
+            A passionate streamer who loves gaming, interacting with fans, and sharing fun moments online. Always up for trying something new!
+          </p>
+
         </div>
+ 
       </div>
 
+      <div class="mx-4 my-6">
+        <button class="w-full flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-[10px]">
+          <!-- <i class="fas fa-headphones"></i> -->
+           Call Now
+        </button>
+      </div>
+
+
       <!-- Hobbies Section -->
-      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+      <div class="mx-4 bg-white mt-6 p-4 rounded-[20px] shadow-md">
         <h4 class="text-lg font-semibold text-[#FE506B]">Hobbies</h4>
         <div class="flex flex-wrap gap-2 mt-2">
           <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">Gaming</span>
@@ -53,7 +55,7 @@
       </div>
 
       <!-- Achievements Section -->
-      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+      <div class="mx-4 bg-white mt-6 p-4 rounded-[20px] shadow-md">
         <h4 class="text-lg font-semibold text-[#FE506B]">Achievements</h4>
         <ul class="list-disc list-inside mt-2 text-sm text-gray-700">
           <li>Top 5 streamer in the FPS category in 2023.</li>
@@ -63,7 +65,7 @@
       </div>
 
       <!-- Favorite Streams Section -->
-      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+      <div class="mx-4 bg-white mt-6 p-4 rounded-[20px] shadow-md">
         <h4 class="text-lg font-semibold text-[#FE506B]">Favorite Streams</h4>
         <div class="grid grid-cols-2 gap-2 mt-2">
           <img src="images/Profile Images/profile1.jpg" alt="Stream 1" class="w-full h-24 object-cover rounded-lg">
@@ -74,7 +76,7 @@
       </div>
 
       <!-- Languages Section -->
-      <div class="bg-white mt-6 p-4 rounded-[20px] shadow-md">
+      <div class="mx-4 bg-white mt-6 p-4 rounded-[20px] shadow-md">
         <h4 class="text-lg font-semibold text-[#FE506B]">Languages</h4>
         <div class="flex flex-wrap gap-2 mt-2">
           <span class="bg-[#FE506B] text-white text-sm py-1 px-3 rounded-full">English</span>
@@ -86,7 +88,7 @@
   </div>
 
   <!-- Footer with icons -->
-  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full rounded-t-[50px] rounded-b-[50px]">
+  <footer class="bg-white p-4 flex justify-around items-center border-t shadow-md fixed bottom-0 left-0 w-full">
     <button class="text-[#FE506B] focus:outline-none rounded-[50px] px-6 py-2">
       <i class="fas fa-video"></i> <!-- Live icon -->
     </button>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OTP Screen</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#ffebee] bg-cover bg-center min-h-screen flex items-end justify-center" style="background-image: url('images/Login/login\ image\ 3.jpg');">
+
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black opacity-40 px-5"></div>
+
+  <!-- OTP Screen -->
+  <div class="relative z-10 max-w-md p-6 bg-black bg-opacity-70 rounded-[20px] shadow-lg mx-5" style="margin-bottom: 70px;">
+    <h2 class="text-2xl font-bold mb-4 text-white">Enter OTP</h2>
+    <p class="text-gray-600 mb-6 text-white">Enter the 4-digit code sent to your phone to verify your account.</p>
+    <form action="success.html" method="GET" class="space-y-4">
+      <input type="text" maxlength="4" placeholder="Enter OTP" class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FE506B] text-center text-lg">
+      <button type="submit" class="w-full p-3 bg-[#FE506B] text-white font-bold rounded-[50px] shadow-lg">Verify</button>
+    </form>
+  </div>
+
+</body>
+</html>

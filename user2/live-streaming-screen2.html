@@ -10,10 +10,7 @@
 <body class="flex flex-col h-screen bg-gray-100">
 
   <!-- Header -->
-  <header class="bg-white shadow-md p-4 flex justify-between items-center">
-    <h1 class="text-xl font-bold text-gray-800">Live Stream</h1>
-    <button class="bg-red-500 text-white px-4 py-2 rounded-full">End Stream</button>
-  </header>
+
 
   <!-- Live Stream Container -->
   <main class="relative flex-1">
@@ -23,9 +20,11 @@
     <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-40 flex flex-col justify-between p-4">
       <!-- Top Bar -->
-      <div class="flex justify-between items-center text-white">
-        <!-- Live Indicator -->
-        <div class="flex items-center space-x-2">
+ 
+      <div class="flex justify-between items-start text-white">
+
+
+        <div class="flex items-center space-x-3">
           <div class="w-3 h-3 bg-red-500 rounded-full"></div>
           <span class="font-bold">LIVE</span>
         </div>
@@ -37,46 +36,51 @@
           <span>1,234 Viewers</span>
         </div>
       </div>
+      
+     
 
       <!-- Bottom Area -->
       <div class="flex flex-col justify-end space-y-4">
         <!-- Comments Section -->
         <div class="space-y-2 max-h-64 overflow-y-auto">
           <!-- Comment 1 -->
-          <div class="flex items-center space-x-2 bg-white bg-opacity-60 p-3 rounded-lg">
+          <div class="flex items-center space-x-2 p-3 rounded-lg">
             <img src="images/Profile Images/profile1.jpg" alt="User" class="w-8 h-8 rounded-full">
             <div>
-              <p class="font-semibold">Ankita</p>
-              <p class="text-sm text-gray-600">Amazing content!</p>
+              <p class="font-semibold text-white">Ankita</p>
+              <p class="text-sm text-gray-600 text-white">Amazing content!</p>
             </div>
           </div>
           <!-- Comment 2 -->
-          <div class="flex items-center space-x-2 bg-white bg-opacity-60 p-3 rounded-lg">
+          <div class="flex items-center space-x-2 p-3 rounded-lg">
             <img src="images/Profile Images/profile2.jpg" alt="User" class="w-8 h-8 rounded-full">
             <div>
-              <p class="font-semibold">Shalani</p>
-              <p class="text-sm text-gray-600">Keep it up!</p>
+              <p class="font-semibold text-white">Shalani</p>
+              <p class="text-sm text-gray-600 text-white">Keep it up!</p>
             </div>
           </div>
           <!-- Comment 3 -->
-          <div class="flex items-center space-x-2 bg-white bg-opacity-60 p-3 rounded-lg">
+          <div class="flex items-center space-x-2 p-3 rounded-lg">
             <img src="images/Profile Images/profile4.jpg" alt="User" class="w-8 h-8 rounded-full">
             <div>
-              <p class="font-semibold">Rajesh</p>
-              <p class="text-sm text-gray-600">This is so cool!</p>
+              <p class="font-semibold text-white">Rajesh</p>
+              <p class="text-sm text-gray-600 text-white">This is so cool!</p>
             </div>
           </div>
         </div>
 
         <!-- Bottom Controls -->
-        <div class="flex justify-center space-x-4">
+        <div class="flex justify-between space-x-2 border-gray-400 border-4 rounded-full mx-[40px] p-2">
           <!-- Video Button -->
-          <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
-            <i class="fas fa-video"></i>
-          </button>
+          <div class="flex items-center justify-center">
+            <img src="images/Profile Images/profile2.jpg" alt="" class="rounded-full h-12 w-12">
+          </div>
+          <div class="flex items-center space-x-2">
+            <h3 class="text-white font-bold">Rosy</h3>
+          </div>
           <!-- Audio Button -->
           <button class="flex items-center justify-center bg-[#FE506B] text-white p-4 rounded-full">
-            <i class="fas fa-headphones"></i>
+            <i class="fas fa-video"></i>
           </button>
         </div>
       </div>

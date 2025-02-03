@@ -23,31 +23,42 @@
           <div class="text-center text-black mt-2">
             <span id="progress-text">1/{{screens.length}}</span>
           </div>
+   
      </div>
-
+     <div class="relative w-full h-60 overflow-hidden shadow-lg mt-6">
+      <img src="images/Profile Images/profile3.jpg" alt="Sample Image" class="w-full h-full object-cover">
+      <div class="absolute inset-0 bg-[#FE506B] opacity-75"></div>
+      <div class="absolute inset-0 flex items-center justify-start p-4">
+        <h2 class="text-white text-2xl font-bold">Personal Details</h2>
+      </div>
+    </div>
 
   <!-- Form Screen -->
-  <div id="form-screen" class="min-h-screen flex flex-col justify-between">
-    <div class="flex-1 flex items-center justify-center px-4">
-      <div class="bg-white p-6 rounded-[20px] shadow-lg w-full max-w-md space-y-6 overflow-hidden">
+  <div id="form-screen" class=" flex flex-col justify-center mt-5">
+    <div class="flex-1 flex items-center justify-center">
+      <div class="bg-white p-6 rounded-[20px]  w-full max-w-md space-y-6 overflow-hidden">
         <!-- Header -->
-        <header class="text-black text-center font-bold">
-          <span id="form-title" class="text-xl">Form Title</span>
-        </header>
 
+        <header class="text-black text-left font-bold">
+          <span id="form-title" class="text-xl text-left">Form Title</span>
+
+        </header>
+ 
         <!-- Form Content -->
-        <main id="form-container" class="space-y-6">
+        <main id="form-container" class="space-y-4">
           <!-- Dynamic form content will be injected here -->
         </main>
 
         <!-- Buttons -->
-        <div class="flex justify-between pt-6">
-          <button id="prev-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-[50px]" disabled>
-            Back
-          </button>
-          <button id="next-btn" class="bg-[#FE506B] text-white px-6 py-2 rounded-[50px]">
-            Next
-          </button>
+        <div class="fixed bottom-0 left-0 w-full bg-white p-4">
+          <div class="flex justify-between">
+            <button id="prev-btn" class="bg-gray-300 text-gray-700 px-6 py-2 rounded-[50px]" disabled style="display: none;">
+              Back
+            </button>
+            <button id="next-btn" class="bg-[#FE506B] w-full text-white px-6 py-4 rounded-[50px]">
+              Next
+            </button>
+          </div>
         </div>
       </div>
     </div>
@@ -60,71 +71,209 @@
       {
         title: "What are your interests?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Interests</label>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Select Your Interests</label>
           <div class="flex flex-wrap gap-3">
-            <button class="interest-btn bg-[#FE506B] text-white px-4 py-2 rounded-[50px]">Football</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cricket</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Badminton</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Gaming</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Cooking</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Traveling</button>
-            <button class="interest-btn bg-gray-300 text-gray-700 px-4 py-2 rounded-[50px]">Dancing</button>
+            <button class="interest-btn bg-[#FE506B] border-2 border-grey-700 text-white px-4 py-2 rounded-[50px]">Football</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Cricket</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Badminton</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Gaming</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Cooking</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Traveling</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Dancing</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Photography</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Romance</button>
           </div>
           <p class="mt-4 text-sm text-gray-500">Click on any button to select your interests.</p>
         `,
       },
       {
-        title: "Why are you here?",
+        title: "What languages do you speak?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Tell Us Why You're Here</label>
-          <textarea class="w-full border rounded-lg p-4" placeholder="Enter your purpose or goals here"></textarea>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Select Your Interests</label>
+          <div class="flex flex-wrap gap-3">
+            <button class="interest-btn bg-[#FE506B] border-2 border-grey-700 text-white px-4 py-2 rounded-[50px]">Tamil</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Malayalam</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Gujrati</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Punjabi</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Kannada</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Tullu</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Telgu</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Sindhi</button>
+            <button class="interest-btn bg-white border-2 border-grey-700 text-gray-700 px-4 py-2 rounded-[50px]">Marathi</button>
+          </div>
+          <p class="mt-4 text-sm text-gray-500">Click on any button to select your language.</p>
         `,
       },
       {
+        title: "Why are you here?",
+        content: `
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Tell Us Why You're Here</label>
+          <div class="w-full space-y-4">
+
+            <!-- Friendship Card -->
+            <div class="w-full p-4 bg-gray-100 rounded-[20px] shadow-lg cursor-pointer flex justify-between items-center">
+              <span class="text-lg font-bold">Friendship</span>
+              <i class="fas fa-handshake text-[#FE506B] text-2xl"></i>
+            </div>
+            <!-- Dating Card -->
+            <div class="w-full p-4 bg-gray-100 rounded-[20px] shadow-lg cursor-pointer flex justify-between items-center">
+              <span class="text-lg font-bold">Dating</span>
+              <i class="fas fa-heart text-[#FE506B] text-2xl"></i>
+            </div>
+            <!-- Networking Card -->
+            <div class="w-full p-4 bg-gray-100 border-2 border-[#FE506B] rounded-[20px] shadow-lg cursor-pointer flex justify-between items-center">
+              <span class="text-lg font-bold">Networking</span>
+              <i class="fas fa-users text-[#FE506B] text-2xl"></i>
+            </div>
+          </div>
+          <style>
+            .container {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+              cursor: pointer;
+              font-size: 22px;
+              user-select: none;
+            }
+          </style>
+        `,
+      },
+
+      {
         title: "What is your gender?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Select Your Gender</label>
-          <select class="w-full border rounded-lg p-4">
-            <option value="">Select an option</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Select Your Gender</label>
+          <div class="w-full space-y-4">
+            <!-- Male Card -->
+            <div class="w-full p-4 bg-gray-100 border-2 border-[#FE506B] rounded-[20px] shadow-lg cursor-pointer">
+              <label class="container flex justify-between items-center">
+                <span class="text-lg font-bold">Male</span>
+                <div class="relative flex items-center">
+                  <input type="radio" name="gender" value="male">
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+            </div>
+            <!-- Female Card -->
+            <div class="w-full p-4 bg-gray-100 rounded-[20px] shadow-lg cursor-pointer">
+              <label class="container flex justify-between items-center">
+                <span class="text-lg font-bold">Female</span>
+                <div class="relative flex items-center">
+                  <input type="radio" name="gender" value="female">
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+            </div>
+            <!-- Other Card -->
+            <div class="w-full p-4 bg-gray-100 rounded-[20px] shadow-lg cursor-pointer">
+              <label class="container flex justify-between items-center">
+                <span class="text-lg font-bold">Other</span>
+                <div class="relative flex items-center">
+                  <input type="radio" name="gender" value="other">
+                  <span class="checkmark"></span>
+                </div>
+              </label>
+            </div>
+          </div>
+          <style>
+          .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            font-size: 22px;
+            user-select: none;
+          }
+          .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+          }
+          .checkmark {
+            position: relative;
+            display: inline-block;
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 8px;
+            border: 2px solid #ccc;
+          }
+          .container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+          .container input:checked ~ .checkmark {
+            background-color: #FE506B;
+            border-color: #FE506B;
+          }
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          .container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          .container .checkmark:after {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: white;
+          }
+          </style>
         `,
+
       },
       {
         title: "Upload your photos",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Upload Your Best Photos</label>
-          <input type="file" class="w-full border rounded-lg p-4">
-          <p class="mt-4 text-sm text-gray-500">Upload high-quality images (max size: 5MB).</p>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Upload Your Best Photos</label>
+          <div class="flex flex-col items-center mt-4">
+            <!-- Add Photo Button -->
+            <div class="flex justify-center items-center mb-4 border-red border-2 rounded-[20px] py-2 w-full">
+              <button class="w-12 h-12 flex justify-center items-center bg-[#FE506B] text-white rounded-full focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 4v16m8-8H4" />
+                </svg>
+              </button>
+            </div>
+            <p class="text-sm text-gray-500 mb-6 text-center">Upload high-quality images (max size: 5MB).</p>
+            <!-- Uploaded Image -->
+            <div class="w-[130px] h-[130px] flex items-center justify-center">
+              <img src="images/Profile Images/user-image.jpg" alt="Uploaded Image 1" class="w-full h-full rounded-[20px] object-cover shadow-lg">
+            </div>
+          </div>
         `,
       },
+
       {
         title: "What is your birthdate?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Enter Your Birthdate</label>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Enter Your Birthdate</label>
           <input type="date" class="w-full border rounded-lg p-4">
         `,
       },
       {
         title: "What is your name?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Name</label>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Your Name</label>
           <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter your full name">
         `,
       },
       {
         title: "What is your phone number?",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Your Phone Number</label>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Your Phone Number</label>
           <input type="tel" class="w-full border rounded-lg p-4" placeholder="Enter your contact number">
         `,
       },
       {
         title: "Enter the OTP",
         content: `
-          <label class="block text-gray-700 font-bold mb-4 text-lg">Verify with OTP</label>
+          <label class="block text-gray-700 font-bold mb-4 text-lg text-left">Verify with OTP</label>
           <input type="text" class="w-full border rounded-lg p-4" placeholder="Enter the OTP sent to your phone">
         `,
       },
